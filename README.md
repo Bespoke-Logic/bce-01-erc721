@@ -7,5 +7,3 @@ This is a simple ERC721 NFT.
 - Quantity limited
 - Open minting - payable - up to limit
 - Owner withdraw proceeds
-
-Todo: Add events
