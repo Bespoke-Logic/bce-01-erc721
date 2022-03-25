@@ -25,8 +25,8 @@ contract Chassis is ERC721, ERC721Enumerable, Pausable, Ownable {
         // The minter's wallet must not exceed the per wallet limit
         require(balanceOf(msg.sender) < WALLET_LIMIT);
         // Then allow the mint
-        tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
+        tokenId = _tokenIdCounter.current();
         _safeMint(msg.sender, tokenId);
     }
 
